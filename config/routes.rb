@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # resources :gas_stations
   resources :gas_stations, except: :destroy
   root to:'gas_stations#index'
