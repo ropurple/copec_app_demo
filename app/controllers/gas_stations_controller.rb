@@ -70,6 +70,6 @@ class GasStationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gas_station_params
-      params.require(:gas_station).permit(:address, :image, :name, :id_station)
+      params.require(:gas_station).permit(:address, :image, :name, :id_station, :avatar)
     end
 end
